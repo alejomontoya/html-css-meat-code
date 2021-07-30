@@ -1,0 +1,41 @@
+.hero-background {
+  background: url(/src/assets/hero-background.jpg);
+  background-size: cover;
+  z-index: -3;
+  position: relative;
+  height: 805px;
+  margin: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(
+      0deg,
+      #ffffff 0%,
+      #ffffff 32.22%,
+      rgba(255, 255, 255, 0.71) 61.99%,
+      rgba(255, 255, 255, 0.0729167) 93.72%,
+      rgba(255, 255, 255, 0) 93.72%
+    );
+  }
+}
+
+.hero {
+  position: relative;
+  img {
+    position: absolute;
+    left: -60%;
+    top: 55%;
+    z-index: -2;
+  }
+  p {
+    font-family: Caveat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 100px;
+    color: var(--grey);
+  }
+}

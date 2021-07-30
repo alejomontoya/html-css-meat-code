@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  .social {
+    width: 300px;
+    &__list {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      &-item {
+        width: 62px;
+        height: 62px;
+        border: 3px solid;
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &.facebook {
+          border-color: var(--blue);
+        }
+        &.instagram {
+          border-color: var(--red);
+        }
+        &.youtube {
+          border-color: var(--gold);
+        }
+      }
+    }
+  }
+}
